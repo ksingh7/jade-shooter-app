@@ -1,12 +1,23 @@
-# simplest-k8s
-Simplest k8s deployment as seen here https://itnext.io/simplest-minimal-k8s-app-tutorial-with-rancher-desktop-in-5-min-5481edb9a4a5
+# Jade Shooter Game Application for Kubernetes
 
-1. Install Rancher Desktop https://rancherdesktop.io/
+1. Get a Kubernetes cluster
 
-2. Clone this repo 
+2. Connect to the cluster using `kubectl`
 
-    `git clone https://github.com/jwsy/simplest-k8s.git`
+3. Clone this repo 
 
-3. Apply the manifests in this repo 
+`git clone https://github.com/jwsy/simplest-k8s.git`
+
+4. Apply the manifests in this repo 
  
     `kubectl apply -f simplest-k8s`
+
+5. Get resources 
+```
+kubectl get all
+kubectl get ingress
+```
+
+6. Open the ingress route in browser
+
+7. Enjoy the game
