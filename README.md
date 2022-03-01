@@ -6,7 +6,7 @@
 
 3. Clone this repo 
 
-`git clone https://github.com/jwsy/simplest-k8s.git`
+`git clone https://github.com/ksingh7/jade-shooter-app.git`
 
 4. Apply the manifests in this repo 
  
