@@ -4,13 +4,19 @@
 
 2. Connect to the cluster using `kubectl`
 
+- For OpenShift
+3. `oc create -f `
+4. `oc expose svc/jade-shooter-service`
+
+- For Kubernetes
+  
 3. Clone this repo 
 
 `git clone https://github.com/ksingh7/jade-shooter-app.git`
 
 4. Apply the manifests in this repo 
  
-    `kubectl apply -f jade-shooter-app`
+    `kubectl apply -f jade-shooter-app/yamls`
 
 5. Get resources 
 ```
