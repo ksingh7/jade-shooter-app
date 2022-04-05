@@ -34,3 +34,25 @@ spec:
   ports:
   - port: 80
     targetPort: 80
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: jade-shooter
+  labels:
+    name: jade-shooter
+spec:
+  rules:
+  - host: jade-shooter.localhost
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: jade-shooter-service
+            port:
+              number: 80
+  tls:
+  - hosts:
+    - jade-shooter.localhost

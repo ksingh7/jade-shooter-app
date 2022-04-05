@@ -7,10 +7,11 @@
 - For OpenShift
 3. `oc create -f https://raw.githubusercontent.com/ksingh7/jade-shooter-app/main/jade-shooter-aio.yaml `
 4. `oc expose svc/jade-shooter-service`
+or `oc expose service/jade-shooter-service --hostname=jade-shooter.apps.127.0.0.1.nip.io`
 
 - For Kubernetes
   
-3. Clone this repo 
+1. Clone this repo 
 
 `git clone https://github.com/ksingh7/jade-shooter-app.git`
 
