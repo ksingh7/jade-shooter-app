@@ -10,7 +10,7 @@
 
 4. Apply the manifests in this repo 
  
-    `kubectl apply -f simplest-k8s`
+    `kubectl apply -f jade-shooter-app`
 
 5. Get resources 
 ```
