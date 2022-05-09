@@ -5,9 +5,9 @@
 2. Connect to the cluster using `kubectl`
 
 - For OpenShift
-3. `oc create -f https://raw.githubusercontent.com/ksingh7/jade-shooter-app/main/jade-shooter-aio.yaml `
+3. `oc create -f https://raw.githubusercontent.com/ksingh7/jade-shooter-app/main/jade-shooter-ocp.yaml `
 4. `oc expose svc/jade-shooter-service`
-or `oc expose service/jade-shooter-service --hostname=jade-shooter.apps.127.0.0.1.nip.io`
+or `oc expose service/jade-shooter-service --hostname=jade-shooter-default.apps.127.0.0.1.nip.io`
 
 - For Kubernetes
   
